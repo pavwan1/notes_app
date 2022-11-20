@@ -11,3 +11,109 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-mode{
+  background-color: black;
+}
+
+.dark-mode h1{
+  color: white;
+}
+.container{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height :100vh ;
+
+}
+
+
+.notes-list{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+
+/* AddNote*/
+.note.new{
+  background-color: rgb(74, 214, 184);
+}
+
+textarea{
+  border: none;
+  resize: none;
+  background-color: rgb(80, 208, 180);
+}
+
+textarea:focus{
+  outline: none;
+}
+
+.save{
+  background-color: rgb(144, 144, 240);
+  border:none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.save:hover{
+  background-color: bisque;
+  cursor: pointer;
+}
+
+
+.note{
+  background-color: #f2be8a;
+  border-radius: 10px;
+  padding: 1.3rem;
+  min-height: 170px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+
+}
+
+.note-footer{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-icon{
+  cursor: pointer;
+}
+.delete-icon:hover{
+  color: rgb(207, 20, 20);
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  background-color: rgb(149, 191, 228);
+  border-radius:10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+  height: 30px;
+}
+
+.search input{
+  border: none;
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgb(131, 187, 236);
+}
+
+.search input:focus{
+  outline: none;
+}
